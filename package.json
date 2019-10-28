@@ -1,0 +1,24 @@
+{
+  "name": "react-picture-watermark",
+  "version": "1.0.0",
+  "description": "a picture wartermark for react",
+  "main": "index.js",
+  "scripts": {
+    "test": "",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxnxbnq/react-picture-watermark.git"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "author": "william",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lxnxbnq/react-picture-watermark/issues"
+  },
+  "homepage": "https://github.com/lxnxbnq/react-picture-watermark#readme"
+}
