@@ -2,14 +2,30 @@
   "name": "react-picture-watermark",
   "version": "1.0.0",
   "description": "a picture wartermark for react",
-  "main": "index.js",
+  "main": "dist/react-picture-watermark.js",
+  "module": "dist/react-picture-watermark.es.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "test": "",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "lint": "yarn lint:check --fix && yarn prettier",
+    "lint:check": "eslint ./src --ext .jsx,.tsx,.ts --ignore-pattern *.test.ts --report-unused-disable-directives"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lxnxbnq/react-picture-watermark.git"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react": "^7.16.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "typescript": "^3.6.4"
   },
   "peerDependencies": {
     "react": ">=16.8.0",
