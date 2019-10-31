@@ -8,24 +8,25 @@ export default {
   output: [
     {
       file: `dist/${pkg.name}.js`,
-      format: 'cjs',
+      format: 'cjs'
     },
     {
       file: `dist/${pkg.name}.es.js`,
-      format: 'esm',
-    },
+      format: 'esm'
+    }
   ],
   external: ['react', 'react-dom'], // 指出外部模块，被指定的库不会与自己的库打包在一起
   plugins: [
     typescript({
       tsconfig: './tsconfig.json',
-      clean: true,
+      clean: true
     }),
     resolve({
-      customResolveOptions: {// 将自定义选项传递给解析插件
+      customResolveOptions: {
+        // 将自定义选项传递给解析插件
         moduleDirectory: 'node_modules'
       }
     }),
     commonjs()
-  ], // 查找外部模块
-}
+  ] // 查找外部模块
+};
