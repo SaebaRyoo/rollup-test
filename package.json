@@ -6,7 +6,7 @@
   "module": "dist/react-picture-watermark.es.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "",
+    "test": "jest -u --color --config=./jest.config.js",
     "build": "rollup -c",
     "prettier": "prettier --write ./src/**/*.tsx ./src/**/*.ts ./demo/**/*.tsx ./demo/**/*.ts --config ./.prettierrc.js --only-changed",
     "lint:check": "eslint ./src ./demo --ext .tsx,.ts --ignore-pattern *.test.ts --report-unused-disable-directives",
@@ -17,17 +17,29 @@
     "url": "git+https://github.com/lxnxbnq/react-picture-watermark.git"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
+    "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme-to-json": "^3.4.3",
     "eslint": "^6.6.0",
     "eslint-plugin-react": "^7.16.0",
     "husky": "^3.0.9",
+    "jest": "^24.9.0",
     "prettier": "1.18.2",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-typescript2": "^0.24.3",
+    "ts-jest": "^24.1.0",
     "typescript": "^3.6.4"
   },
   "peerDependencies": {
