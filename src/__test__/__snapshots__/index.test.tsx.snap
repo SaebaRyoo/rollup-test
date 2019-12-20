@@ -8,7 +8,7 @@ exports[`测试<WaterMark />快照 1. 匹配快照 1`] = `
     className="App-header"
   >
     <p>
-      hello world,  welcome
+      hello world, welcome here
     </p>
   </header>
 </div>
